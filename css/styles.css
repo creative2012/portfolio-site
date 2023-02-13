@@ -251,3 +251,16 @@ i:hover{
     }
 
 }
+@media only screen and (max-width: 600px)  {
+    #name{
+
+        font-size: 70px;
+
+    }
+    #aboutImage{
+        
+        font-size: 22px;
+       
+    }
+    
+}

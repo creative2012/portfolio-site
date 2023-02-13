@@ -77,6 +77,10 @@ nav ul li:hover{
     color: #fe6b02;;
     font-weight: bold;
 }
+.active{
+    color: #fe6b02;;
+    font-weight: bold;
+}
 #spacer{
     height: 80px;
 }
@@ -86,19 +90,18 @@ nav ul li:hover{
     background-color: white;
 }
 #about{
-    /* height: calc(100vh - 80px); */
-    display: flex;
+    /* height: calc(100vh - 80px); */ 
+    display:grid;
     align-items: center;
     min-height: 500px;
     padding: 20px;
     margin-top: 50px;
     color: white;
-    display:grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 10% 40% 50%;
     grid-template-rows: fit-content;
     grid-template-areas: 
-    "image about"
-    "skills skills";
+    "name image about"
+    "skills skills skills";
 }
 #aboutImage{
     grid-area: image;
@@ -107,6 +110,7 @@ nav ul li:hover{
     font-family: 'lobster';
     height: 350px;
     width: 350px;
+    margin: 0 auto;
     background-color: #fe6b02;
     border-radius: 15rem 8rem;
     -webkit-border-radius: 15rem 8rem;
@@ -123,7 +127,7 @@ nav ul li:hover{
     -moz-transition: background-image 0.5s ease;
     -ms-transition: background-image 0.5s ease;
     -o-transition: background-image 0.5s ease;
-    margin-left: 160px;
+   
 }
 /* #aboutImage:hover{
     background-image: url('../images/meToon.png');
@@ -163,15 +167,15 @@ i:hover{
     text-align: center;
     grid-area: name;
     color:white;
+    white-space: nowrap;
     font-weight: bold;
     font-size: 75px;
     font-family: 'lobster';
-    transform: rotate(-90deg) translate(-70px, -290px);
-    -webkit-transform: rotate(-90deg) translate(-70px, -290px);
-    -moz-transform: rotate(-90deg) translate(-70px, -290px);
-    -ms-transform: rotate(-90deg) translate(-70px, -290px);
-    -o-transform: rotate(-90deg) translate(-70px, -290px);
-
+    transform: rotate(-90deg) translate(-110px, -0px);
+    -webkit-transform: rotate(-90deg) translate(-110px, -0px);
+    -moz-transform: rotate(-90deg) translate(-110px, -0px);
+    -ms-transform: rotate(-90deg) translate(-110px, -0px);
+    -o-transform: rotate(-90deg) translate(-110px, -0px);
 }
 #aboutText{
     grid-area: about;
@@ -184,7 +188,12 @@ i:hover{
     color:#ff6a00;
     
 }
-
+#skills h1{
+    font-size: 30px;
+    font-family: 'lobster';
+    color:#ff6a00;
+    
+}
 #skills{
     margin: 20px 0;
     grid-area: skills;
@@ -195,4 +204,40 @@ i:hover{
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
+}
+#projects{
+    
+}
+
+@media (max-width: 1000px) {
+
+    #about{
+        /* height: calc(100vh - 80px); */
+
+        min-height: 500px;
+        padding: 20px;
+        margin-top: 50px;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "name"
+        "image"
+        "about"
+        "skills";
+    }
+    #name{
+        transform: rotate(0deg) translate(0, -40px);
+        -webkit-transform: rotate(0deg) translate(0, -40px);
+        -moz-transform: rotate(0deg) translate(0, -40px);
+        -ms-transform: rotate(0deg) translate(0, -40px);
+        -o-transform: rotate(0deg) translate(0, -40px);
+    }
+    nav{
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+}
+
 }

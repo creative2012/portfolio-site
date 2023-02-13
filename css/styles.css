@@ -2,7 +2,6 @@
     --main-color: #363b57;
     --body-color: #252525
 }
-
 body{
     margin:0;
     font-family: 'poppins';
@@ -25,10 +24,7 @@ header{
 
 }
 
-main{
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 #headerLogo{
     position: absolute;
@@ -90,12 +86,13 @@ nav ul li:hover{
     background-color: white;
 }
 #about{
+    max-width: 1200px;
+    margin: 50px auto;
     /* height: calc(100vh - 80px); */ 
     display:grid;
     align-items: center;
     min-height: 500px;
     padding: 20px;
-    margin-top: 50px;
     color: white;
     grid-template-columns: 10% 40% 50%;
     grid-template-rows: fit-content;
@@ -122,12 +119,6 @@ nav ul li:hover{
     background-position: bottom;
     background-repeat: no-repeat;
     border: 5px solid white;
-    transition: background-image 0.5s ease;
-    -webkit-transition: background-image 0.5s ease;
-    -moz-transition: background-image 0.5s ease;
-    -ms-transition: background-image 0.5s ease;
-    -o-transition: background-image 0.5s ease;
-   
 }
 /* #aboutImage:hover{
     background-image: url('../images/meToon.png');
@@ -171,31 +162,34 @@ i:hover{
     font-weight: bold;
     font-size: 75px;
     font-family: 'lobster';
-    transform: rotate(-90deg) translate(-110px, -0px);
-    -webkit-transform: rotate(-90deg) translate(-110px, -0px);
-    -moz-transform: rotate(-90deg) translate(-110px, -0px);
-    -ms-transform: rotate(-90deg) translate(-110px, -0px);
-    -o-transform: rotate(-90deg) translate(-110px, -0px);
+    transform: rotate(-90deg) translate(-110px, 0px);
+    -webkit-transform: rotate(-90deg) translate(-110px, 0px);
+    -moz-transform: rotate(-90deg) translate(-110px, 0px);
+    -ms-transform: rotate(-90deg) translate(-110px, 0px);
+    -o-transform: rotate(-90deg) translate(-110px, 0px);
 }
 #aboutText{
     grid-area: about;
     padding: 30px;
-
 }
 #about h1{
     font-size: 30px;
-    font-family: 'lobster';
+    font-family: 'lobster Two';
+    font-style: italic;
     color:#ff6a00;
     
 }
 #skills h1{
     font-size: 30px;
-    font-family: 'lobster';
+    font-family: 'lobster Two';
+    font-style: italic;
+    
     color:#ff6a00;
     
 }
 #skills{
-    margin: 20px 0;
+    margin-top: 50px;
+    padding: 20px 30px;
     grid-area: skills;
 }
 #skillsContainer{
@@ -207,6 +201,14 @@ i:hover{
 }
 #projects{
     
+}
+#frontEnd,
+#backEnd,
+#frameWorks{
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    padding: 20px;
+
 }
 
 @media (max-width: 1000px) {
@@ -226,11 +228,12 @@ i:hover{
         "skills";
     }
     #name{
-        transform: rotate(0deg) translate(0, -40px);
-        -webkit-transform: rotate(0deg) translate(0, -40px);
-        -moz-transform: rotate(0deg) translate(0, -40px);
-        -ms-transform: rotate(0deg) translate(0, -40px);
-        -o-transform: rotate(0deg) translate(0, -40px);
+        margin-left: -10px;
+        transform: rotate(0deg) translate(0, -30px);
+        -webkit-transform: rotate(0deg) translate(0, -30px);
+        -moz-transform: rotate(0deg) translate(0, -30px);
+        -ms-transform: rotate(0deg) translate(0, -30px);
+        -o-transform: rotate(0deg) translate(0, -30px);
     }
     nav{
         transform: scale(0.8);
@@ -238,6 +241,13 @@ i:hover{
         -moz-transform: scale(0.8);
         -ms-transform: scale(0.8);
         -o-transform: scale(0.8);
-}
+    }
+    #aboutImage{
+        font-size: 25px;
+    }
+    #skills{
+        margin: 0 0;
+        padding: 10px 30px;
+    }
 
 }

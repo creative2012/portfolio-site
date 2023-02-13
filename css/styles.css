@@ -137,6 +137,20 @@ nav ul li:hover{
     -ms-transform: rotate(-30deg) translate(-50px, 70px);
     -o-transform: rotate(-30deg) translate(-50px, 70px);
 }
+#aboutImage #tag3{
+    transform: rotate(22deg) translate(280px, 50px);
+    -webkit-transform: rotate(22deg) translate(280px, 50px);
+    -moz-transform: rotate(22deg) translate(280px, 50px);
+    -ms-transform: rotate(22deg) translate(280px, 50px);
+    -o-transform: rotate(22deg) translate(280px, 50px);
+}
+#aboutImage #tag4{
+    transform: rotate(22deg) translate(280px, 50px);
+    -webkit-transform: rotate(22deg) translate(280px, 50px);
+    -moz-transform: rotate(22deg) translate(280px, 50px);
+    -ms-transform: rotate(22deg) translate(280px, 50px);
+    -o-transform: rotate(22deg) translate(280px, 50px);
+}
 i{
     font-size: 80px;
     color:#bcc5f8;

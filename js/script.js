@@ -97,25 +97,25 @@ const skills = [
     },
 ];
 
-function populateSideBar(position){
+const populateSideBar = (position) => {
     let el = skills[position]; 
 
     sideBarIcon.innerHTML = el.icon;
     sideBarTitle.innerHTML = el.title + el.source;
     sideBarContent.innerHTML = el.content;
-    
+    sideBarContent.scrollTo(0,0);
     sideBar.style.right = '0';
     sideBar.style.opacity = '1';
     
 }
 
-function closeSideBar(){
+const closeSideBar = () => {
     sideBar.style.right = '-540px';
     sideBar.style.opacity = '0';
 
 }
 
-document.body.addEventListener('click', function(e){
+document.body.addEventListener('click', (e) => {
     if(e.target.dataset.type == 'skills'){
         populateSideBar(parseInt(e.target.dataset.id));
     }

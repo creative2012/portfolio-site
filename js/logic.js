@@ -1,3 +1,4 @@
+isMobile();
 const about = document.querySelector('body');
 let currentPage = "LandingPage";
 

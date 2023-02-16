@@ -20,6 +20,7 @@ body{
     overflow: hidden;
     font-family: 'poppins';
     background-color: var(--main-dark);
+    height: 100vh;
 }
 #logo{
     background-image: url('../images/header_logo.svg');

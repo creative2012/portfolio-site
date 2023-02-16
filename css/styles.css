@@ -28,8 +28,8 @@ body{
     background-position: center;
     background-size: contain;
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 5px;
+    left: 5px;
     height: 100px;
     width: 100px;
     z-index: 1;
@@ -210,5 +210,12 @@ nav ul li:hover{
 
         margin-top:0vw;
    
+    }
+    #logo{
+        top: 5px;
+        left: 5px;
+        height: 70px;
+        width: 70px;
+  
     }
 }

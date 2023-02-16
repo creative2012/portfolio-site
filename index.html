@@ -1,98 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul Morris Portfolio</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
-    <header>
+    <div id="pageContainer">
         <nav>
             <ul>
-                <li class="active">About</li>
-                <li>Projects</li>
-                <li>Current Interest</li>
-                <li>Contact</li>
+                <li id="projects">Projects</li>
+                <li id="about">Current</li>
+                <li id="about">About</li>
             </ul>
         </nav>
-    </header>
-
-    <div id="spacer"></div>
-
-    <main>
-        <div id="sideBar">
-            <div id="dLogo"></div>
-            <div id="dTitle"></div>
-            <div id="dClose">X</div>
-            <div id="dContent"></div>
-        </div>
-
-        <div id="about">
-            <div id="name">Paul Morris</div>
-            <div id="aboutImage">
-                <div id="tag1">Frontend</div>
-                <div id="tag2">Developer</div>
-            </div>
-            <div id="aboutText">
-                <h1>It's all about me...</h1>
-                <p>Hey, <B>I'm Paul</B>, nice to see you here! </p>
-                <p> I'm a <b>Front end Developer,</b> and sometimes backender! with a passion for the 
-                    <b>user experiance, design and programming</b>.</p>
-                <p>For the longest time,
-                    this was simply a hobbie... Now it's my focus
-                    and drive. I love to <b>create new things and solve problems</b>,
-                    try different approaches and continue learning
-                    new ideas.</p>
-
-                <p> Based in Staffordshire UK,
-                    I plan to delve deeper and deeper into the world of
-                    design and programming, to bring <b>fresh interfaces</b>
-                    and <b>engaging experiances</b> to the world.</p>
-            </div>
-
-            <div id="skills">
-                <h1>My Super powers...</h1>
-                <div id="skillsContainer">
-
-                    <i data-type="skills" data-id="0" class="devicon-html5-plain-wordmark colored"></i>
-                    <i data-type="skills" data-id="1" class="devicon-css3-plain-wordmark colored"></i>
-                    <i data-type="skills" data-id="2" class="devicon-javascript-plain colored"></i>
-                    <i data-type="skills" data-id="3" class="devicon-photoshop-plain colored"></i>
-
-                    <i data-type="skills" data-id="4" class="devicon-php-plain colored"></i>
-                    <i data-type="skills" data-id="5" class="devicon-mysql-plain-wordmark"></i>
-
-                    <i data-type="skills" data-id="6" class="devicon-bootstrap-plain-wordmark "></i>
-                    <i data-type="skills" data-id="7" class="devicon-jquery-plain-wordmark colored"></i>
-                    <i data-type="skills" data-id="8" class="devicon-nodejs-plain-wordmark colored"></i>
-                    <i data-type="skills" data-id="9" class="devicon-react-original-wordmark colored"></i>
-                    <i data-type="skills" data-id="10" class="devicon-vuejs-plain-wordmark colored"></i>
-                    <i data-type="skills" data-id="11" class="devicon-laravel-plain-wordmark colored"></i>
-
-                </div>
-            </div>
-        </div>
-
-        <div id="projects"></div>
-
-        <div id="contact"></div>
-    </main>
-    
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="welcomeText">PAUL MORRIS
+            
+            <div id="mainTitle">Front End Developer</div>
+        </div>   
+        <footer>
+            <ul>
+                <li id="projects">Mail</li>
+                <li id="about">Git</li>
+                <li id="about">Linkedin</li>
+            </ul>
+        </footer>
+        
+    </div>
+    <script src="./js/script.js"></script>
 </body>
-
 </html>

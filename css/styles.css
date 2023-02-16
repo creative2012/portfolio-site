@@ -14,6 +14,37 @@
     font-family: "code";
     src: url('../fonts/Code7X5Regular-ypBe.ttf');
     }
+#email_i,
+#linkedin_i,
+#git_i{
+    background-position: center;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#email_i{
+    background-image: url('../images/email.png');
+}
+#linkedin_i{
+    background-image: url('../images/linkedin.png');
+}
+#git_i{
+    background-image: url('../images/git.png');
+}
+#email_i:hover,
+#linkedin_i:hover,
+#git_i:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
 body{
     margin:0;
     -webkit-font-smoothing: antialiased;

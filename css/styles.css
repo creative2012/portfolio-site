@@ -1,5 +1,5 @@
 :root{
-    --b: 50%;
+    --b: 20%;
     --mainBtn: flex;
     --main-orange: rgb(255, 133, 45);
     --main-dark: rgb(27, 27, 27);;
@@ -63,21 +63,65 @@ nav ul li:hover{
     -o-transform: scale(1.1);
 }
 #one,
-#two{
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#ten{
     
     position: absolute;
-    height: 100%;
+    height: 50%;
+    width: var(--b);
     transition: .5s;
     background-color: #B20101;
 }
 #one{
-    
-    left:0;
-    width: var(--b);
+    top: 0;
+    /* left:0; */
+    /* width: var(--b); */
 }
 #two{
-    right:0;
-    width: var(--b);
+    bottom: 0;
+    
+    /* right:0; */
+    /* width: var(--b); */
+}
+#three{
+    top: 0;
+    left: 20%;
+
+}
+#four{
+    bottom: 0;
+    left: 20%;
+}
+#five{
+    top: 0;
+    left: 40%;
+}
+#six{
+    bottom: 0;
+    left: 40%;
+}
+#seven{
+    top: 0;
+    left: 60%;
+}
+#eight{
+    bottom: 0;
+    left: 60%;
+}
+#nine{
+    top: 0;
+    left: 80%;
+}
+#ten{
+    bottom: 0;
+    left: 80%;
 }
 /* #pageContainer:hover{
     
@@ -85,8 +129,7 @@ nav ul li:hover{
 } */
 #pageContainer{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     width: 100vw;
     height: 100vh;
 }

@@ -22,12 +22,10 @@ class Interface{
     }
     enter(){
         setTimeout(() => {
-            navigation.style.transform = 'translateY(0)';
-            footer.style.transform = 'translateY(0)';
-            setTimeout(() => {
+            navigation.style.opacity = '1';
+            footer.style.opacity = '1';
             logo.style.opacity = '1';
-            },700);
-        },1500);
+        },2500);
     }
     exit(){
 

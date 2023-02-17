@@ -18,13 +18,13 @@ class LandingPage {
     init() {
         this.listener();
         setTimeout(() => {
-            lp_mainTitle.style.opacity = "1";
             lp_welcomeText.style.opacity = "1";
-        }, 200);
+        }, 1000);
 
         setTimeout(() => {
+            lp_mainTitle.style.opacity = "1";
             lp_mainTitle.style.transform = "translateX(0)";
-        }, 500);
+        }, 1500);
     }
     listener() {
         document.addEventListener("mousemove", this.rotate, false);
@@ -74,7 +74,7 @@ class LandingPage {
     enter() {
         this.listener();
         lp_welcomeText.style.opacity = "0";
-        lp_mainTitle.style.transform = "translateX(500px)";
+        lp_mainTitle.style.transform = "translateX(1000px)";
         let timer = 200;
         let timer2 = 200;
         lp_screenArrayTop.forEach((item) => {
@@ -98,7 +98,7 @@ class LandingPage {
             lp_welcomeText.style.transition = '';
             lp_welcomeText.style.transform = "";
             this.init();
-        }, timer2 + 400);
+        }, timer2 + 100);
     }
 
 }

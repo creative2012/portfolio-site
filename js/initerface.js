@@ -13,9 +13,11 @@ class Interface {
     buttonHandler(button) {
         if (button.target.id == "about") {
             landingPage.exit();
+            aboutPage.enter();
 
         }
         if (button.target.id == "logo") {
+            aboutPage.exit();
             landingPage.enter();
         }
 

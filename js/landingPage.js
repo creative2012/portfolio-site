@@ -80,8 +80,8 @@ class LandingPage {
         this.listener();
         lp_welcomeText.style.opacity = "0";
         lp_mainTitle.style.transform = "translateX(1000px)";
-        let timer = 200;
-        let timer2 = 200;
+        let timer = 700;
+        let timer2 = 700;
         lp_screenArrayTop.forEach((item) => {
             setTimeout(() => {
 

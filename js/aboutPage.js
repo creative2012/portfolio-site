@@ -59,6 +59,7 @@ class AboutPage {
                 ap_picture.style.transform = "scale(0.95)";
               
                 setTimeout(() => {
+                    ap_picture.style.transitionDuration = '0.5s';
                     ap_text.style.transform = "translate(1000px)";
                     ap_picture.style.transform = "translate(-1000px)";
                     Array.from(document.querySelectorAll('.sp')).forEach(function (button) {
@@ -71,7 +72,7 @@ class AboutPage {
 
         }, 100);
         setTimeout(() => {
-            ap_picture.style.transitionDuration = '0.5s';
+            
             ap_picture.style.backgroundImage = "url('https://creative2012.github.io/portfolio-site/images/slide_bgImage.png')";
         }, 500);
 

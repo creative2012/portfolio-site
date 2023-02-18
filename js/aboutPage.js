@@ -1,6 +1,7 @@
 const ap_picture = document.getElementById('aboutImage');
 const ap_imageContainer = document.getElementById('aboutImageContainer');
 const ap_text = document.getElementById('aboutText');
+const ap_pageContainer = document.getElementById('aboutPageContainer');
 let images = [
     'https://creative2012.github.io/portfolio-site/images/main_funnyFace.png',
     'https://creative2012.github.io/portfolio-site/images/mainPic.png',
@@ -78,7 +79,7 @@ class AboutPage {
     }
     enter() {
         onResize();
-        ap_imageContainer.scrollTo(0, 0);
+        ap_pageContainer.scrollTo(0, 0);
         currentPage = "About";
         this.listener();
         setTimeout(() => {

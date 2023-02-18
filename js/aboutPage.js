@@ -36,7 +36,7 @@ class AboutPage {
         let midpoint2 = window.innerHeight / 2;
         let pos = event.clientX - midpoint;
         let pos2 = event.clientY - midpoint2;
-        let val = (pos / midpoint) * 5;
+        let val = (pos / midpoint) * 12;
         let val2 = (pos2 / midpoint2) * 8;
         ap_picture.style.transform = "translate(0) perspective(550px) rotateY(" + val + "deg) rotateX(" + val2 + "deg)";
     }
@@ -44,7 +44,8 @@ class AboutPage {
         ap_picture.style.backgroundImage = `url("${images[0].src}")`;
     }
     changeImageBack() {
-        ap_picture.style.backgroundImage = `url("${images[1].src}")`;;
+        ap_picture.style.backgroundImage = `url("${images[1].src}")`;
+        ap_picture.style.transform = "translate(0) perspective(550px) rotateY(0) rotateX(0)";
     }
 
 
@@ -75,6 +76,7 @@ class AboutPage {
 
     }
     enter() {
+        currentPage = "About";
         this.listener();
         setTimeout(() => {
             ap_picture.style.transform = "translate(0)";

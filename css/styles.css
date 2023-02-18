@@ -313,12 +313,12 @@ nav ul li:hover {
 }
 
 #aboutText {
+    margin: auto 0;
     align-self: center;
-    justify-self: center;
-    height: fit-content;
+    
+
     width: 80%;
     opacity: 0;
-    margin-top: 20px;
     transition-property: opacity, transform;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;

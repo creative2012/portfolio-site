@@ -318,6 +318,7 @@ nav ul li:hover {
     height: fit-content;
     width: 80%;
     opacity: 0;
+    margin-top: 0px;
     transition-property: opacity, transform;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
@@ -326,7 +327,7 @@ nav ul li:hover {
     -moz-transform: translate(1000px);
     -ms-transform: translate(1000px);
     -o-transform: translate(1000px);
-    
+
 }
 
 #aboutImage {
@@ -361,7 +362,8 @@ nav ul li:hover {
     -o-border-radius: 400px;
     border: 5px solid rgb(66, 66, 66);
 }
-#aboutImage:hover{
+
+#aboutImage:hover {
     background-image: url('../images/main_funnyFace.png');
 }
 
@@ -391,31 +393,35 @@ nav ul li:hover {
     justify-self: center;
     grid-area: atext;
     width: 100%;
-    height: 70%;
+    height: 80%;
     overflow-y: scroll;
 }
+
 #aboutPageContainer::-webkit-scrollbar-track,
 #aboutPageContainer #scroll::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: transparent
 }
+
 #aboutPageContainer::-webkit-scrollbar,
 #aboutPageContainer #scroll::-webkit-scrollbar {
     width: 5px;
     padding-right: 5px;
     background-color: transparent;
 }
-#aboutPageContainer::-webkit-scrollbar-thumb{
+
+#aboutPageContainer::-webkit-scrollbar-thumb {
     width: 5px;
     padding-right: 5px;
     background-color: var(--main-orange);
 }
-#aboutPageContainer::-webkit-scrollbar-thumb
-#aboutPageContainer #scroll::-webkit-scrollbar-thumb {
+
+#aboutPageContainer::-webkit-scrollbar-thumb #aboutPageContainer #scroll::-webkit-scrollbar-thumb {
     border-radius: 1px;
     background-color: transparent;
 }
-.sp{
+
+.sp {
     transform: translate(1000px);
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -427,24 +433,25 @@ nav ul li:hover {
     -ms-transform: translate(1000px);
     -o-transform: translate(1000px);
 }
+
 @media only screen and (max-width: 600px) {
     #aboutPageContainer {
-      
+
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
-        grid-template-areas: 
-        "aimage"
-        "atext "
-        "askills";
-        
-        position:absolute;
+        grid-template-areas:
+            "aimage"
+            "atext "
+            "askills";
+
+        position: absolute;
         top: 80px;
-        overflow-y:auto;
-        height: 80%;
-        
-    
-        
+        overflow-y: auto;
+        height: 83%;
+
+
+
     }
 
 
@@ -454,19 +461,20 @@ nav ul li:hover {
         position: relative;
         margin-top: -50px;
         padding-top: 0px;
-        padding-bottom: 200px;
+        padding-bottom: 100px;
         overflow: visible;
         width: 100%;
-        
-        
+
+
     }
+
     #aboutImage {
         margin-top: 50px;
         width: 300px;
         height: 300px;
         background-size: 80%;
-        
-}
+
+    }
 
 
 }

@@ -73,7 +73,7 @@ class LandingPage {
         });
         setTimeout(() => {
             lp_container.style.display = 'none';
-        }, timer2 + 100);
+        }, timer2 + 500);
     }
     enter() {
         lp_container.style.display = 'flex';

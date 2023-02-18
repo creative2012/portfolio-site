@@ -395,6 +395,7 @@ nav ul li:hover {
     width: 100%;
     height: 80%;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #aboutPageContainer::-webkit-scrollbar-track,

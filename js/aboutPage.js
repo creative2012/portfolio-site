@@ -1,26 +1,24 @@
 const ap_picture = document.getElementById('aboutImage');
 const ap_imageContainer = document.getElementById('aboutImageContainer');
 const ap_text = document.getElementById('aboutText');
+let images = [
+    'https://creative2012.github.io/portfolio-site/images/main_funnyFace.png',
+    'https://creative2012.github.io/portfolio-site/images/mainPic.png',
+];
 
 
 
 class AboutPage {
-    init(){
-        let images = [
-            'https://creative2012.github.io/portfolio-site/images/main_funnyFace.png',
-            'https://creative2012.github.io/portfolio-site/images/mainPic.png',
-        ];
-    
+    init() {
+       
         this.loadImages(images, 0);
+        this.loadImages(images, 1);
     }
     loadImages(images, index) {
         if (index < images.length) {
             let img = new Image();
             img.src = images[index];
             images[index] = img;
-            images[index].onload = function() {
-                this.loadImages(images, ++index);
-            };
         }
     }
     listener() {
@@ -42,35 +40,39 @@ class AboutPage {
         let val2 = (pos2 / midpoint2) * 8;
         ap_picture.style.transform = "translate(0) perspective(550px) rotateY(" + val + "deg) rotateX(" + val2 + "deg)";
     }
-    changeImage(){
-        ap_picture.style.backgroundImage = 'url("https://creative2012.github.io/portfolio-site/images/main_funnyFace.png")';
+    changeImage() {
+        ap_picture.style.backgroundImage = `url("${images[0].src}")`;
     }
-    changeImageBack(){
-        ap_picture.style.backgroundImage = 'url("https://creative2012.github.io/portfolio-site/images/mainPic.png")';
+    changeImageBack() {
+        ap_picture.style.backgroundImage = `url("${images[1].src}")`;;
     }
-    
+
 
     exit() {
         this.removeListener();
         setTimeout(() => {
-            
-                setTimeout(() => {
-                    ap_text.style.opacity = "0";
-                    ap_picture.style.opacity = "0";
-                    setTimeout(() => {
-                        ap_text.style.transform = "translate(1000px)";
-                        ap_picture.style.transform = "translate(-1000px)";
-                    }, 1000);
-                }, 50);
 
-            
+            setTimeout(() => {
+                ap_text.style.opacity = "0";
+                ap_picture.style.opacity = "0";
+                setTimeout(() => {
+                    ap_text.style.transform = "translate(1000px)";
+                    ap_picture.style.transform = "translate(-1000px)";
+                    Array.from(document.querySelectorAll('.sp')).forEach(function (button) {
+                            button.style.transform = "translate(1000px)";
+
+                    });
+                }, 1000);
+            }, 50);
+
+
         }, 100);
         setTimeout(() => {
-            ap_picture.style.transitionDuration= '0.5s';
+            ap_picture.style.transitionDuration = '0.5s';
             ap_picture.style.backgroundImage = "url('https://creative2012.github.io/portfolio-site/images/slide_bgImage.png')";
         }, 500);
 
-    
+
     }
     enter() {
         this.listener();
@@ -85,13 +87,24 @@ class AboutPage {
                     ap_text.style.opacity = "1";
                 }, 200);
             }, 500);
-            
+
         }, 1400);
         setTimeout(() => {
-            ap_picture.style.backgroundImage = "url('https://creative2012.github.io/portfolio-site/images/mainPic.png')";
-            ap_picture.style.transitionDuration= '0.2s';
+            let buttonTimer = 500;
+            Array.from(document.querySelectorAll('.sp')).forEach(function (button) {
+                setTimeout(() => {
+                    button.style.transform = "translate(0)";
+                }, buttonTimer);
+                buttonTimer += 100;
+            });
+
+        }, 2000);
+        setTimeout(() => {
+            ap_picture.style.backgroundImage = `url("${images[1].src}")`;;
+            ap_picture.style.transitionDuration = '0.2s';
+
         }, 2500);
-  
+
     }
 
 }

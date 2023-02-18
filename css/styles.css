@@ -412,3 +412,15 @@ nav ul li:hover {
     border-radius: 1px;
     background-color: transparent;
 }
+.sp{
+    transform: translate(1000px);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transform: translate(1000px);
+    -moz-transform: translate(1000px);
+    -ms-transform: translate(1000px);
+    -o-transform: translate(1000px);
+}

@@ -315,7 +315,7 @@ nav ul li:hover {
 #aboutText {
     margin: auto 0;
     align-self: center;
-    
+    font-size: 25px;
 
     width: 80%;
     opacity: 0;
@@ -409,16 +409,11 @@ nav ul li:hover {
     padding-right: 5px;
     background-color: transparent;
 }
-
+#aboutPageContainer #scroll::-webkit-scrollbar-thumb,
 #aboutPageContainer::-webkit-scrollbar-thumb {
     width: 5px;
     padding-right: 5px;
     background-color: var(--main-orange);
-}
-
-#aboutPageContainer::-webkit-scrollbar-thumb #aboutPageContainer #scroll::-webkit-scrollbar-thumb {
-    border-radius: 1px;
-    background-color: transparent;
 }
 
 .sp {
@@ -470,8 +465,8 @@ nav ul li:hover {
 
     #aboutImage {
         margin-top: 50px;
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         background-size: 95%;
 
     }

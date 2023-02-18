@@ -466,14 +466,17 @@ nav ul li:hover {
 
     #aboutImage {
         margin-top: 50px;
-        width: 400px;
-        height: 400px;
+        width: 380px;
+        height: 380px;
         background-size: 95%;
 
     }
     #aboutText {
-
+        font-size: 25px;
         margin-top: 0;
+    }
+    #aboutPageContainer h1{
+        font-size: 30px;
     }
 
 

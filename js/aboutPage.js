@@ -14,7 +14,7 @@ ap_scroll.onscroll = () => {
         aboutPage.scrollFunction()
  } };
 ap_pageContainer.onscroll = () => { 
-    if (ap_pageContainer.scrollTop > 900) {
+    if (ap_pageContainer.scrollTop > 480) {
         aboutPage.scrollFunction()
  } };
 

@@ -2,6 +2,9 @@ const about = document.querySelector('body');
 const navigation = document.querySelector('nav');
 const footer = document.querySelector('footer');
 const logo = document.getElementById('logo');
+const aboutLink = document.getElementById('about');
+const currentLink = document.getElementById('current');
+const projectsLink = document.getElementById('projects');
 let currentPage = "LandingPage";
 class Interface {
     init() {
@@ -18,6 +21,9 @@ class Interface {
                 currentPage = "About";
                 landingPage.exit();
                 aboutPage.enter();
+                currentLink.style.fontWeight = "normal";
+                projectsLink.style.fontWeight = "normal";
+                aboutLink.style.fontWeight = "bold";
             }
 
         }
@@ -27,6 +33,9 @@ class Interface {
                 currentPage = "LandingPage";
                 aboutPage.exit();
                 landingPage.enter();
+                aboutLink.style.fontWeight = "normal";
+                currentLink.style.fontWeight = "normal";
+                projectsLink.style.fontWeight = "normal";
             }
         }
 

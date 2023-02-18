@@ -54,8 +54,9 @@ class AboutPage {
         setTimeout(() => {
 
             setTimeout(() => {
-                ap_text.style.opacity = "0";
-                ap_picture.style.opacity = "0";
+                ap_text.style.transform = "scale(0.95)";
+                ap_picture.style.transform = "scale(0.95)";
+              
                 setTimeout(() => {
                     ap_text.style.transform = "translate(1000px)";
                     ap_picture.style.transform = "translate(-1000px)";
@@ -63,7 +64,7 @@ class AboutPage {
                             button.style.transform = "translate(1000px)";
 
                     });
-                }, 1000);
+                }, 300);
             }, 50);
 
 

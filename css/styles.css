@@ -321,13 +321,12 @@ nav ul li:hover {
     transition-property: opacity, transform;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
-    transform: translate(-1000px);
+    transform: translate(1000px);
     -webkit-transform: translate(1000px);
     -moz-transform: translate(1000px);
     -ms-transform: translate(1000px);
     -o-transform: translate(1000px);
-
-    /* border: 1px solid white; */
+    
 }
 
 #aboutImage {

@@ -43,10 +43,10 @@ class AboutPage {
         ap_picture.style.transform = "translate(0) perspective(550px) rotateY(" + val + "deg) rotateX(" + val2 + "deg)";
     }
     changeImage(){
-        ap_picture.style.backgroundImage = 'url("../images/main_funnyFace.png")';
+        ap_picture.style.backgroundImage = 'url("https://creative2012.github.io/images/main_funnyFace.png")';
     }
     changeImageBack(){
-        ap_picture.style.backgroundImage = 'url("../images/mainPic.png")';
+        ap_picture.style.backgroundImage = 'url("https://creative2012.github.io/images/mainPic.png")';
     }
     
 
@@ -67,7 +67,7 @@ class AboutPage {
         }, 100);
         setTimeout(() => {
             ap_picture.style.transitionDuration= '0.5s';
-            ap_picture.style.backgroundImage = "url('../images/slide_bgImage.png')";
+            ap_picture.style.backgroundImage = "url('https://creative2012.github.io/images/slide_bgImage.png')";
         }, 500);
 
     
@@ -88,7 +88,7 @@ class AboutPage {
             
         }, 1400);
         setTimeout(() => {
-            ap_picture.style.backgroundImage = "url('../images/mainPic.png')";
+            ap_picture.style.backgroundImage = "url('https://creative2012.github.io/images/mainPic.png')";
             ap_picture.style.transitionDuration= '0.2s';
         }, 2500);
   

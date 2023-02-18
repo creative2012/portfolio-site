@@ -78,6 +78,7 @@ class AboutPage {
     }
     enter() {
         onResize();
+        ap_imageContainer.scrollTo(0, 0);
         currentPage = "About";
         this.listener();
         setTimeout(() => {

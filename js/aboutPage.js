@@ -59,7 +59,8 @@ class AboutPage {
                 ap_picture.style.transform = "scale(0.95)";
               
                 setTimeout(() => {
-                    ap_picture.style.transitionDuration = '0.5s';
+                    ap_picture.style.transitionDuration = '1s';
+                    ap_text.style.transitionDuration = '1s';
                     ap_text.style.transform = "translate(1000px)";
                     ap_picture.style.transform = "translate(-1000px)";
                     Array.from(document.querySelectorAll('.sp')).forEach(function (button) {
@@ -81,6 +82,8 @@ class AboutPage {
     enter() {
         onResize();
         ap_pageContainer.scrollTo(0, 0);
+        ap_picture.style.transitionDuration = '0.5s';
+        ap_text.style.transitionDuration = '0.s';
         currentPage = "About";
         this.listener();
         setTimeout(() => {

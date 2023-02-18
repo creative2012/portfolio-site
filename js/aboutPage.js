@@ -77,6 +77,7 @@ class AboutPage {
 
     }
     enter() {
+        onResize();
         currentPage = "About";
         this.listener();
         setTimeout(() => {

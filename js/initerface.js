@@ -2,32 +2,32 @@ const about = document.querySelector('body');
 const navigation = document.querySelector('nav');
 const footer = document.querySelector('footer');
 const logo = document.getElementById('logo');
-class Interface{
-    init(){
+class Interface {
+    init() {
         this.listener();
         this.enter();
     }
-    listener(){
+    listener() {
         about.addEventListener('click', this.buttonHandler);
     }
-    buttonHandler(button){
-        if(button.target.id == "about"){
+    buttonHandler(button) {
+        if (button.target.id == "about") {
             landingPage.exit();
-    
+
         }
-        if(button.target.id == "logo"){
+        if (button.target.id == "logo") {
             landingPage.enter();
         }
-        
+
     }
-    enter(){
+    enter() {
         setTimeout(() => {
             navigation.style.opacity = '1';
             footer.style.opacity = '1';
             logo.style.opacity = '1';
-        },2500);
+        }, 2500);
     }
-    exit(){
+    exit() {
 
     }
 }

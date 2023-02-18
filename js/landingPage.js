@@ -10,6 +10,7 @@ const lp_nine = document.getElementById('lp_nine');
 const lp_ten = document.getElementById('lp_ten');
 const lp_welcomeText = document.getElementById('lp_welcomeText');
 const lp_mainTitle = document.getElementById('lp_mainTitle');
+const lp_container = document.getElementById('landingPageContainer');
 
 const lp_screenArrayTop = [lp_five, lp_three, lp_seven, lp_one, lp_nine];
 const lp_screenArrayBottom = [lp_six, lp_four, lp_eight, lp_two, lp_ten];
@@ -70,8 +71,12 @@ class LandingPage {
             timer2 += 100;
 
         });
+        setTimeout(() => {
+            lp_container.style.display = 'none';
+        }, timer2 + 100);
     }
     enter() {
+        lp_container.style.display = 'flex';
         this.listener();
         lp_welcomeText.style.opacity = "0";
         lp_mainTitle.style.transform = "translateX(1000px)";

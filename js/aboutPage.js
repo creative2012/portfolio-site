@@ -67,6 +67,10 @@ class AboutPage {
                             button.style.transform = "translate(1000px)";
 
                     });
+                    setTimeout(() => {
+                        ap_picture.style.opacity = "0";
+                            ap_text.style.opacity = "0";
+                        }, 50);
                 }, 300);
             }, 50);
 

@@ -83,7 +83,7 @@ class AboutPage {
         onResize();
         ap_pageContainer.scrollTo(0, 0);
         ap_picture.style.transitionDuration = '0.5s';
-        ap_text.style.transitionDuration = '0.s';
+        ap_text.style.transitionDuration = '0.5s';
         currentPage = "About";
         this.listener();
         setTimeout(() => {

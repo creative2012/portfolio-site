@@ -647,9 +647,7 @@ nav ul li:hover {
 #pp_ten .pp_image{
     background-image: url('../images/matrix.jpg');
 }
-#pp_ten .pp_description{
-    text-align: right;
-}
+
 
 .pp_image {
     position: relative;
@@ -749,40 +747,40 @@ nav ul li:hover {
     }
     
     #pp_six {
+        flex-direction: row-reverse;
         top: 200%;
         right: 0;
     }
-   
+    #pp_six .pp_description{
+        text-align: right;
+    }
     
     #pp_seven {
+        flex-direction: row-reverse;
         top: 240%;
         left: 0;
     }
-    #pp_seven .pp_description{
-        text-align: right;
-    }
-    
+   
     #pp_eight {
-        flex-direction: row;
+        
         top: 280%;
         right: 0;
     }
-    
-    #pp_nine {
-        flex-direction: row;
-        top: 320%;
-        left: 0;
-    }
-    #pp_nine .pp_description{
+    #pp_eight .pp_description{
         text-align: right;
     }
     
+    #pp_nine {
+        
+        top: 320%;
+        left: 0;
+    }
+   
     
     #pp_ten {
+        flex-direction: row-reverse;
         top: 360%;
         right: 0;
     }
-    #pp_ten .pp_description{
-        text-align: left;
-    }
+  
 }

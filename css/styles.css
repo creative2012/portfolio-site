@@ -429,6 +429,9 @@ nav ul li:hover {
     -ms-transform: translate(1000px);
     -o-transform: translate(1000px);
 }
+#aboutText b{
+    color: var(--main-orange);
+}
 
 @media only screen and (max-width: 900px) {
     #aboutPageContainer {

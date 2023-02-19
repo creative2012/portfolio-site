@@ -588,6 +588,7 @@ nav ul li:hover {
 }
 #pp_four .pp_image{
     background-image: url('../images/weatherapp.png');
+    background-position: center;
 }
 
 #pp_five {
@@ -598,6 +599,7 @@ nav ul li:hover {
 }
 #pp_five .pp_image{
     background-image: url('../images/blackJack.png');
+    background-position: center;
 }
 #pp_six {
     top: 60%;
@@ -765,7 +767,6 @@ nav ul li:hover {
         top: 280%;
         right: 0;
     }
-    
     
     #pp_nine {
         flex-direction: row;

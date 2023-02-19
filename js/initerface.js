@@ -75,7 +75,7 @@ class Interface {
                     self.closePage();
                     setTimeout(() =>{
                         projectsPage.enter();
-                    },800);
+                    },1200);
                 }
                 if(currentPage == "About"){
                     projectsPage.enter();

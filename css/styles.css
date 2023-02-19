@@ -546,6 +546,7 @@ nav ul li:hover {
     background-color: wheat;
 }
 #pp_one {
+    flex-direction: row-reverse;
     top: 0;
     left: 0;
     background-color: rgb(10, 10, 10);
@@ -562,9 +563,7 @@ nav ul li:hover {
 #pp_two .pp_image{
     background-image: url('../images/dateLounge.png');
 }
-#pp_two .pp_description{
-    text-align: right;
-}
+
 
 
 #pp_three {
@@ -582,6 +581,7 @@ nav ul li:hover {
 
 
 #pp_four {
+    flex-direction: row-reverse;
     top: 30%;
     right: 0;
     background-color: rgb(10, 10, 10);
@@ -589,11 +589,9 @@ nav ul li:hover {
 #pp_four .pp_image{
     background-image: url('../images/weatherapp.png');
 }
-#pp_four .pp_description{
-    text-align: right;
-}
 
 #pp_five {
+    flex-direction: row-reverse;
     top: 60%;
     left: 0;
     background-color: rgb(10, 10, 10);
@@ -609,9 +607,6 @@ nav ul li:hover {
 #pp_six .pp_image{
     background-image: url('../images/matrix.jpg');
 }
-#pp_six .pp_description{
-    text-align: right;
-}
 
 #pp_seven {
     top: 90%;
@@ -623,6 +618,7 @@ nav ul li:hover {
 }
 
 #pp_eight {
+    flex-direction: row-reverse;
     top: 90%;
     right: 0;
     background-color: rgb(10, 10, 10);
@@ -630,11 +626,8 @@ nav ul li:hover {
 #pp_eight .pp_image{
     background-image: url('../images/matrix.jpg');
 }
-#pp_eight .pp_description{
-    text-align: right;
-}
-
 #pp_nine {
+    flex-direction: row-reverse;
     top: 120%;
     left: 0;
     background-color: rgb(10, 10, 10);
@@ -724,20 +717,29 @@ nav ul li:hover {
     }
     
     #pp_two {
+        flex-direction: row-reverse;
         top: 40%;
         right: 0;
     }
-    
+    #pp_two .pp_description{
+        text-align: right;
+    }
     #pp_three {
+        flex-direction: row-reverse;
         top: 80%;
         left: 0;
     
     }
     
     #pp_four {
+       
         top: 120%;
         right: 0;
     }
+    #pp_four .pp_description{
+    text-align: right;
+}
+
     
     #pp_five {
         top: 160%;
@@ -748,24 +750,38 @@ nav ul li:hover {
         top: 200%;
         right: 0;
     }
+   
     
     #pp_seven {
         top: 240%;
         left: 0;
     }
+    #pp_seven .pp_description{
+        text-align: right;
+    }
     
     #pp_eight {
+        flex-direction: row;
         top: 280%;
         right: 0;
     }
     
+    
     #pp_nine {
+        flex-direction: row;
         top: 320%;
         left: 0;
     }
+    #pp_nine .pp_description{
+        text-align: right;
+    }
+    
     
     #pp_ten {
         top: 360%;
         right: 0;
+    }
+    #pp_ten .pp_description{
+        text-align: left;
     }
 }

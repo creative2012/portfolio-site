@@ -73,6 +73,7 @@ class LandingPage {
         });
         setTimeout(() => {
             lp_container.style.display = 'none';
+            go = true;
         }, timer2 + 500);
     }
     enter() {
@@ -80,8 +81,8 @@ class LandingPage {
         this.listener();
         lp_welcomeText.style.opacity = "0";
         lp_mainTitle.style.transform = "translateX(1000px)";
-        let timer = 700;
-        let timer2 = 700;
+        let timer = 100;
+        let timer2 = 100;
         lp_screenArrayTop.forEach((item) => {
             setTimeout(() => {
 
@@ -103,6 +104,7 @@ class LandingPage {
             lp_welcomeText.style.transition = '';
             lp_welcomeText.style.transform = "";
             this.init();
+            go = true;
         }, timer2 + 100);
     }
 

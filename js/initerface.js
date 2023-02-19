@@ -7,6 +7,7 @@ const currentLink = document.getElementById('current');
 const projectsLink = document.getElementById('projects');
 let currentPage = "LandingPage";
 let self = ''
+let go = true;
 class Interface {
     init() {
         this.listener();
@@ -19,11 +20,22 @@ class Interface {
     buttonHandler(button) {
         
         //go to about page
-        if (button.target.id == "about") {
+        if (button.target.id == "about" && go) {
             if (currentPage != "About") {
+                go = false;
                 self.closePage();
+                if(currentPage == "Projects"){
+                    setTimeout(() =>{
+                        aboutPage.enter();
+                    },200);
+                }
+                if(currentPage == "LandingPage"){
+                    setTimeout(() =>{
+                        aboutPage.enter();
+                    },1400);
+                }
                 currentPage = "About";
-                aboutPage.enter();
+                
                 currentLink.style.fontWeight = "normal";
                 projectsLink.style.fontWeight = "normal";
                 aboutLink.style.fontWeight = "bold";
@@ -31,14 +43,45 @@ class Interface {
 
         }
         //go back to landing page
-        if (button.target.id == "logo") {
+        if (button.target.id == "logo" && go) {
             if (currentPage != "LandingPage") {
+                go = false;
                 self.closePage();
+                if(currentPage == "Projects"){
+                    setTimeout(() =>{
+                        landingPage.enter();
+                    },100);
+                }
+                if(currentPage == "About"){
+                    setTimeout(() =>{
+                        landingPage.enter();
+                    },600);
+                }
                 currentPage = "LandingPage";
-                landingPage.enter();
                 aboutLink.style.fontWeight = "normal";
                 currentLink.style.fontWeight = "normal";
                 projectsLink.style.fontWeight = "normal";
+            }
+        }
+        //go to projects page
+        if (button.target.id == "projects" && go) {
+            if (currentPage != "Projects") {
+                self.closePage();
+                go = false;
+                if(currentPage == "LandingPage"){
+                    setTimeout(() =>{
+                        projectsPage.enter();
+                    },1000);
+                }
+                if(currentPage == "About"){
+                    setTimeout(() =>{
+                        projectsPage.enter();
+                    },300);
+                }
+                currentPage = "Projects";
+                aboutLink.style.fontWeight = "normal";
+                currentLink.style.fontWeight = "normal";
+                projectsLink.style.fontWeight = "bold";
             }
         }
 

@@ -96,6 +96,7 @@ class AboutPage {
         }, 500);
         setTimeout(() => {
             ap_pageContainer.style.display = 'none';
+            go = true;
         }, 900);
 
 
@@ -108,6 +109,7 @@ class AboutPage {
         ap_picture.style.transitionDuration = '0.5s';
         ap_text.style.transitionDuration = '0.5s';
         currentPage = "About";
+        let timer = 100
         this.listener();
         setTimeout(() => {
             ap_picture.style.transform = "translate(0)";
@@ -121,12 +123,12 @@ class AboutPage {
                 }, 200);
             }, 500);
 
-        }, 1400);
+        }, timer);
         setTimeout(() => {
             ap_picture.style.backgroundImage = `url("${images[1].src}")`;;
             ap_picture.style.transitionDuration = '0.2s';
-
-        }, 2500);
+            go = true;
+        }, timer + 1100);
 
     }
 

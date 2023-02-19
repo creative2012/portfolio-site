@@ -523,63 +523,136 @@ nav ul li:hover {
     /*width: 50%;
     */height: 30%;
     transition: all 0.5s ease;
-    background-color: var(--main-blue);
+    background-color: rgb(100, 100, 100);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
 }
-
+#pp_one:hover > .pp_image,
+#pp_two:hover > .pp_image,
+#pp_three:hover > .pp_image,
+#pp_four:hover > .pp_image,
+#pp_five:hover > .pp_image,
+#pp_six:hover > .pp_image,
+#pp_seven:hover > .pp_image,
+#pp_eight:hover > .pp_image,
+#pp_nine:hover > .pp_image,
+#pp_ten:hover > .pp_image{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.pp_image{
+    background-color: wheat;
+}
 #pp_one {
     top: 0;
     left: 0;
+    background-color: rgb(10, 10, 10);
+}
+#pp_one .pp_image{
+    background-image: url('../images/aritasn.jpg');
 }
 
 #pp_two {
     top: 0;
     right: 0;
+    background-color: rgb(10, 10, 10);
 }
+#pp_two .pp_image{
+    background-image: url('../images/dateLounge.png');
+}
+#pp_two .pp_description{
+    text-align: right;
+}
+
 
 #pp_three {
     top: 30%;
     left: 0;
-
+    background-color: rgb(10, 10, 10);
 }
+#pp_three .pp_image{
+    background-image: url('../images/readme.png');
+}
+
 
 #pp_four {
     top: 30%;
     right: 0;
+    background-color: rgb(10, 10, 10);
+}
+#pp_four .pp_image{
+    background-image: url('../images/weatherapp.png');
+}
+#pp_four .pp_description{
+    text-align: right;
 }
 
 #pp_five {
     top: 60%;
     left: 0;
+    background-color: rgb(10, 10, 10);
 }
-
+#pp_five .pp_image{
+    background-image: url('../images/blackJack.png');
+}
 #pp_six {
     top: 60%;
     right: 0;
+    background-color: rgb(10, 10, 10);
+}
+#pp_six .pp_image{
+    background-image: url('../images/matrix.jpg');
+}
+#pp_six .pp_description{
+    text-align: right;
 }
 
 #pp_seven {
     top: 90%;
     left: 0;
+    background-color: rgb(10, 10, 10);
+}
+#pp_seven .pp_image{
+    background-image: url('../images/matrix.jpg');
 }
 
 #pp_eight {
     top: 90%;
     right: 0;
+    background-color: rgb(10, 10, 10);
+}
+#pp_eight .pp_image{
+    background-image: url('../images/matrix.jpg');
+}
+#pp_eight .pp_description{
+    text-align: right;
 }
 
 #pp_nine {
     top: 120%;
     left: 0;
+    background-color: rgb(10, 10, 10);
+}
+#pp_nine .pp_image{
+    background-image: url('../images/matrix.jpg');
 }
 
 #pp_ten {
     top: 120%;
     right: 0;
+    background-color: rgb(10, 10, 10);
     
+}
+#pp_ten .pp_image{
+    background-image: url('../images/matrix.jpg');
+}
+#pp_ten .pp_description{
+    text-align: right;
 }
 
 .pp_image {
@@ -588,6 +661,8 @@ nav ul li:hover {
     height: 100%;
     left: 0;
     transition: .5s;
+    background-size: cover;
+    background-position: fixed;
     /* background-color: rgb(0, 0, 0); */
 }
 
@@ -615,7 +690,7 @@ nav ul li:hover {
     white-space: nowrap;
 }
 .pp_description p i{
-    font-size: 35px;
+    font-size: 60px;
 }
 
 @media only screen and (max-width: 900px) {

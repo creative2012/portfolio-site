@@ -3,7 +3,6 @@ const interface = new Interface();
 const landingPage = new LandingPage();
 const aboutPage = new AboutPage();
 const projectsPage = new ProjectsPage();
-
 interface.init();
 landingPage.init();
 aboutPage.init();
@@ -17,6 +16,3 @@ function onResize(){
         window.scrollTo(0, 0);
         document.body.scrollTop = 0;
 }
-
-
-

@@ -6,20 +6,23 @@ const aboutLink = document.getElementById('about');
 const currentLink = document.getElementById('current');
 const projectsLink = document.getElementById('projects');
 let currentPage = "LandingPage";
+let self = ''
 class Interface {
     init() {
         this.listener();
         this.enter();
+        self = this;
     }
     listener() {
         about.addEventListener('click', this.buttonHandler);
     }
     buttonHandler(button) {
+        
         //go to about page
         if (button.target.id == "about") {
             if (currentPage != "About") {
+                self.closePage();
                 currentPage = "About";
-                landingPage.exit();
                 aboutPage.enter();
                 currentLink.style.fontWeight = "normal";
                 projectsLink.style.fontWeight = "normal";
@@ -30,8 +33,8 @@ class Interface {
         //go back to landing page
         if (button.target.id == "logo") {
             if (currentPage != "LandingPage") {
+                self.closePage();
                 currentPage = "LandingPage";
-                aboutPage.exit();
                 landingPage.enter();
                 aboutLink.style.fontWeight = "normal";
                 currentLink.style.fontWeight = "normal";
@@ -39,6 +42,18 @@ class Interface {
             }
         }
 
+    }
+    closePage() {
+        if(currentPage == "LandingPage"){
+            landingPage.exit();
+        }
+        if(currentPage == "About"){
+            aboutPage.exit();
+
+        }
+        if(currentPage == "Projects"){
+            projectsPage.exit();
+        }
     }
     enter() {
         setTimeout(() => {

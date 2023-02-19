@@ -17,7 +17,7 @@ const lp_screenArrayBottom = [lp_six, lp_four, lp_eight, lp_two, lp_ten];
 
 class LandingPage {
     init() {
-        this.listener();
+        this.listener()
         setTimeout(() => {
             lp_welcomeText.style.opacity = "1";
         }, 1000);

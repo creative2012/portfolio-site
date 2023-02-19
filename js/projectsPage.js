@@ -15,7 +15,7 @@ const pp_screenArrayBottom = [pp_two, pp_four, pp_six, pp_eight, pp_ten];
 class ProjectsPage {
     enter() {
         pp_container.style.display = 'grid';
-        pp_container.style.opacity = '1';
+        
         let timer = 100;
         let timer2 = 100;
         pp_screenArrayTop.forEach((item) => {
@@ -60,7 +60,7 @@ class ProjectsPage {
         });
         setTimeout(() => {
             pp_container.style.display = 'none';
-            pp_container.style.opacity = '0';
+            
             go = true;
         }, timer2 + 300);
 

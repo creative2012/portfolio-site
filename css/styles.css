@@ -4,7 +4,7 @@
     --mainBtn: flex;
     --main-orange: rgb(255, 133, 45);
     --main-dark: rgb(27, 27, 27);
-    --main-blue: rgb(39, 48, 172);
+    --main-blue: rgb(10, 19, 150);
 
 }
 
@@ -496,15 +496,14 @@ nav ul li:hover {
     position: fixed;
     top: 0;
     bottom: -30px;
-    opacity: 0;
     left: 0;
     right: 0;
     display: none;
-    transform: 0.5s;
-    -webkit-transform: 0.5s;
-    -moz-transform: 0.5s;
-    -ms-transform: 0.5s;
-    -o-transform: 0.5s;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
 }
 #pp_one,
 #pp_two,
@@ -519,6 +518,7 @@ nav ul li:hover {
     cursor: pointer;
     display: flex;
     position: absolute;
+    overflow: hidden;
     width: 0;
     /*width: 50%;
     */height: 30%;
@@ -579,6 +579,7 @@ nav ul li:hover {
 #pp_ten {
     top: 120%;
     right: 0;
+    
 }
 
 .pp_image {
@@ -591,13 +592,30 @@ nav ul li:hover {
 }
 
 .pp_description {
+    padding: 20px;
     position: relative;
+    display: flex;
+    flex-direction: column;
     right: 0;
     width: 50%;
     height: 100%;
     transition: .5s;
+    justify-content: center;
+    color: white;
     /* background-color: rgb(177, 173, 173); */
 
+}
+.pp_description h1{
+    margin-bottom:-10px;
+    font-size: 25px;
+    white-space: nowrap;
+}
+.pp_description p{
+    font-size: 15px;
+    white-space: nowrap;
+}
+.pp_description p i{
+    font-size: 35px;
 }
 
 @media only screen and (max-width: 900px) {

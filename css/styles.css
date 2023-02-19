@@ -344,7 +344,7 @@ nav ul li:hover {
     background-position: contain;
     background-size: 90%;
     background-repeat: no-repeat;
-    background-color: var(--main-orange);
+    background-color: rgb(247, 247, 247);
     opacity: 0;
     transition-property: opacity, background-image, transform;
     transition-duration: 0.5s;

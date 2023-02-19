@@ -23,19 +23,20 @@ class Interface {
         if (button.target.id == "about" && go) {
             if (currentPage != "About") {
                 go = false;
-                self.closePage();
+                
                 if(currentPage == "Projects"){
+                    self.closePage();
                     setTimeout(() =>{
                         aboutPage.enter();
-                    },200);
+                    },500);
                 }
                 if(currentPage == "LandingPage"){
+                    self.closePage();
                     setTimeout(() =>{
                         aboutPage.enter();
                     },1400);
                 }
                 currentPage = "About";
-                
                 currentLink.style.fontWeight = "normal";
                 projectsLink.style.fontWeight = "normal";
                 aboutLink.style.fontWeight = "bold";
@@ -46,15 +47,17 @@ class Interface {
         if (button.target.id == "logo" && go) {
             if (currentPage != "LandingPage") {
                 go = false;
-                self.closePage();
+                
                 if(currentPage == "Projects"){
+                    landingPage.enter();
                     setTimeout(() =>{
-                        landingPage.enter();
-                    },100);
+                        projectsPage.exit();
+                    },500);
                 }
                 if(currentPage == "About"){
+                    landingPage.enter();
                     setTimeout(() =>{
-                        landingPage.enter();
+                        aboutPage.exit();
                     },600);
                 }
                 currentPage = "LandingPage";
@@ -66,17 +69,19 @@ class Interface {
         //go to projects page
         if (button.target.id == "projects" && go) {
             if (currentPage != "Projects") {
-                self.closePage();
+                
                 go = false;
                 if(currentPage == "LandingPage"){
+                    self.closePage();
                     setTimeout(() =>{
                         projectsPage.enter();
-                    },1000);
+                    },800);
                 }
                 if(currentPage == "About"){
+                    projectsPage.enter();
                     setTimeout(() =>{
-                        projectsPage.enter();
-                    },300);
+                        aboutPage.exit()
+                    },700);
                 }
                 currentPage = "Projects";
                 aboutLink.style.fontWeight = "normal";

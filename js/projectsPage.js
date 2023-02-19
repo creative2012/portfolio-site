@@ -40,7 +40,7 @@ class ProjectsPage {
     }
     exit() {
 
-        let timer = 200;
+        let timer = 100;
         let timer2 = 100;
         pp_screenArrayTop.forEach((item) => {
             setTimeout(() => {

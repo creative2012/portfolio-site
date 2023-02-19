@@ -104,11 +104,15 @@ class AboutPage {
 
             ap_picture.style.backgroundImage = "url('https://creative2012.github.io/portfolio-site/images/slide_bgImage.png')";
         }, 500);
+        setTimeout(() => {
+            ap_pageContainer.style.display = 'none';
+        }, 900);
 
 
     }
     enter() {
         onResize();
+        ap_pageContainer.style.display = 'grid';
         ap_scroll.scrollTo(0, 0);
         ap_pageContainer.scrollTo(0, 0);
         ap_picture.style.transitionDuration = '0.5s';

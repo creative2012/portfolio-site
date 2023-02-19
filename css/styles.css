@@ -529,21 +529,18 @@ nav ul li:hover {
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
 }
-#pp_one:hover > .pp_image,
-#pp_two:hover > .pp_image,
-#pp_three:hover > .pp_image,
-#pp_four:hover > .pp_image,
-#pp_five:hover > .pp_image,
-#pp_six:hover > .pp_image,
-#pp_seven:hover > .pp_image,
-#pp_eight:hover > .pp_image,
-#pp_nine:hover > .pp_image,
-#pp_ten:hover > .pp_image{
-    transform: scale(2);
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
+#pp_one:hover > .pp_description,
+#pp_two:hover > .pp_description,
+#pp_three:hover > .pp_description,
+#pp_four:hover > .pp_description,
+#pp_five:hover > .pp_description,
+#pp_six:hover > .pp_description,
+#pp_seven:hover > .pp_description,
+#pp_eight:hover > .pp_description,
+#pp_nine:hover > .pp_description,
+#pp_ten:hover > .pp_description{
+    color: var(--main-orange);
+    font-weight: bold;
 }
 .pp_image{
     background-color: wheat;
@@ -677,9 +674,10 @@ nav ul li:hover {
     right: 0;
     width: 50%;
     height: 100%;
-    transition: .5s;
+    transition: all 0.2s ease;
     justify-content: center;
     color: white;
+
     /* background-color: rgb(177, 173, 173); */
 
 }

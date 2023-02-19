@@ -23,7 +23,7 @@ class ProjectsPage {
 
                 item.style.width = "var(--s1)";
             }, timer);
-            timer += 200;
+            timer += 100;
 
         });
         pp_screenArrayBottom.forEach((item) => {
@@ -31,7 +31,7 @@ class ProjectsPage {
 
                 item.style.width = "var(--s1)";
             }, timer2);
-            timer2 += 200;
+            timer2 += 100;
 
         });
         setTimeout(() => {
@@ -47,7 +47,7 @@ class ProjectsPage {
 
                 item.style.width = "0";
             }, timer);
-            timer += 200;
+            timer += 100;
 
         });
         pp_screenArrayBottom.forEach((item) => {
@@ -55,7 +55,7 @@ class ProjectsPage {
 
                 item.style.width = "0";
             }, timer2);
-            timer2 += 200;
+            timer2 += 100;
 
         });
         setTimeout(() => {

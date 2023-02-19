@@ -8,16 +8,6 @@ let images = [
     'https://creative2012.github.io/portfolio-site/images/mainPic.png',
 ];
 
-
-ap_scroll.onscroll = () => { 
-    if (ap_scroll.scrollTop > 200) {
-        aboutPage.scrollFunction()
- } };
-ap_pageContainer.onscroll = () => { 
-    if (ap_pageContainer.scrollTop > 480) {
-        aboutPage.scrollFunction()
- } };
-
 class AboutPage {
     init() {
 

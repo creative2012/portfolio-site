@@ -15,4 +15,14 @@ function onResize(){
         document.querySelector("body").style.height = this.height + "px";
         window.scrollTo(0, 0);
         document.body.scrollTop = 0;
+        
 }
+
+ap_scroll.onscroll = () => { 
+        if (ap_scroll.scrollTop > 200) {
+            aboutPage.scrollFunction()
+     } };
+    ap_pageContainer.onscroll = () => { 
+        if (ap_pageContainer.scrollTop > 480) {
+            aboutPage.scrollFunction()
+     } };

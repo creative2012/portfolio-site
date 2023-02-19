@@ -539,11 +539,11 @@ nav ul li:hover {
 #pp_eight:hover > .pp_image,
 #pp_nine:hover > .pp_image,
 #pp_ten:hover > .pp_image{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
 }
 .pp_image{
     background-color: wheat;
@@ -578,6 +578,10 @@ nav ul li:hover {
 #pp_three .pp_image{
     background-image: url('../images/readme.png');
 }
+#pp_three h1{
+    font-size: 23px;
+}
+
 
 
 #pp_four {
@@ -661,8 +665,7 @@ nav ul li:hover {
     height: 100%;
     left: 0;
     transition: .5s;
-    background-size: cover;
-    background-position: fixed;
+    background-size:cover;
     /* background-color: rgb(0, 0, 0); */
 }
 

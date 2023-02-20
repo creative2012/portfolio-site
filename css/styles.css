@@ -540,8 +540,8 @@ nav ul li:hover {
     -o-transition: all 0.5s ease;
 }
 .pp_description a{
-    text-decoration: none;
-    color: white;
+    text-decoration: none !important;
+    color: white !important;
 }
 #pp_one:hover > .pp_description a,
 #pp_two:hover > .pp_description a,

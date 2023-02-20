@@ -539,16 +539,20 @@ nav ul li:hover {
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
 }
-#pp_one:hover > .pp_description,
-#pp_two:hover > .pp_description,
-#pp_three:hover > .pp_description,
-#pp_four:hover > .pp_description,
-#pp_five:hover > .pp_description,
-#pp_six:hover > .pp_description,
-#pp_seven:hover > .pp_description,
-#pp_eight:hover > .pp_description,
-#pp_nine:hover > .pp_description,
-#pp_ten:hover > .pp_description{
+.pp_description a{
+    text-decoration: none;
+    color: white;
+}
+#pp_one:hover > .pp_description a,
+#pp_two:hover > .pp_description a,
+#pp_three:hover > .pp_description a,
+#pp_four:hover > .pp_description a,
+#pp_five:hover > .pp_description a,
+#pp_six:hover > .pp_description a,
+#pp_seven:hover > .pp_description a,
+#pp_eight:hover > .pp_description a,
+#pp_nine:hover > .pp_description a,
+#pp_ten:hover > .pp_description a{
     color: var(--main-orange);
     font-weight: bold;
 }

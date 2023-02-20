@@ -141,8 +141,10 @@ nav ul li {
     align-self: center;
     
 }
-#phone{
+#phone a{
+    color: white;
     font-size: 20px;
+    text-decoration: none;
 }
 #copyright{
     position: fixed;
@@ -540,8 +542,8 @@ nav ul li:hover {
     -o-transition: all 0.5s ease;
 }
 .pp_description a{
-    text-decoration: none !important;
-    color: white !important;
+    text-decoration: none;
+    color: white;
 }
 #pp_one:hover > .pp_description a,
 #pp_two:hover > .pp_description a,

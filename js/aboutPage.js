@@ -3,6 +3,7 @@ const ap_imageContainer = document.getElementById('aboutImageContainer');
 const ap_text = document.getElementById('aboutText');
 const ap_scroll = document.getElementById('scroll');
 const ap_pageContainer = document.getElementById('aboutPageContainer');
+const ap_skillsContainer = document.getElementById('skillsContainer');
 let images = [
     'https://creative2012.github.io/portfolio-site/images/main_funnyFace.png',
     'https://creative2012.github.io/portfolio-site/images/mainPic.png',
@@ -51,6 +52,17 @@ class AboutPage {
         });
 
 
+    }
+    isScrolledIntoView() {
+        var rect = ap_skillsContainer.getBoundingClientRect();
+        var elemTop = rect.top;
+        var elemBottom = rect.bottom;
+    
+        // Only completely visible elements return true:
+        var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+        // Partially visible elements return true:
+        //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+        return isVisible;
     }
 
 

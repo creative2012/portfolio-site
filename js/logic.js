@@ -19,12 +19,16 @@ function onResize() {
 }
 
 ap_scroll.onscroll = () => {
-        if (ap_scroll.scrollTop > 200) {
-                aboutPage.scrollFunction()
+        if (aboutPage.isScrolledIntoView()) {
+                aboutPage.scrollFunction();
         }
+
+
 };
 ap_pageContainer.onscroll = () => {
-        if (ap_pageContainer.scrollTop > 480) {
-                aboutPage.scrollFunction()
+
+        if (aboutPage.isScrolledIntoView()) {
+                aboutPage.scrollFunction();
         }
+
 };

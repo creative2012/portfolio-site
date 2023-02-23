@@ -540,6 +540,7 @@ nav ul li:hover {
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    border: 1px dashed rgb(110, 110, 110);
 }
 .pp_description a{
     text-decoration: none;
@@ -586,6 +587,10 @@ nav ul li:hover {
     top: 30%;
     left: 0;
     background-color: rgb(10, 10, 10);
+    
+}
+#pp_three .pp_description{
+    text-align: right;
 }
 #pp_three .pp_image{
     background-image: url('../images/readme.png');
@@ -601,6 +606,9 @@ nav ul li:hover {
     top: 30%;
     right: 0;
     background-color: rgb(10, 10, 10);
+}
+#pp_four .pp_description{
+    text-align: right;
 }
 #pp_four .pp_image{
     background-image: url('../images/weatherapp.png');
@@ -687,8 +695,18 @@ nav ul li:hover {
     justify-content: center;
     color: white;
 
-    /* background-color: rgb(177, 173, 173); */
 
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 .pp_description h1{
     margin-bottom:-10px;
@@ -745,6 +763,9 @@ nav ul li:hover {
         top: 80%;
         left: 0;
     
+    }
+    #pp_three .pp_description{
+        text-align: left;
     }
     
     #pp_four {

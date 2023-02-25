@@ -581,7 +581,11 @@ nav ul li:hover {
 #pp_eight:hover > .pp_image,
 #pp_nine:hover > .pp_image,
 #pp_ten:hover > .pp_image{
-    background-position: 10% 0;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 .pp_image{
     background-color: wheat;
@@ -720,6 +724,7 @@ nav ul li:hover {
     color: white;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, rgb(10, 10, 10) 50%, rgb(36, 36, 36) 50%);
+    z-index: 1;
 
 
 }

@@ -546,18 +546,42 @@ nav ul li:hover {
     text-decoration: none;
     color: white;
 }
-#pp_one:hover > .pp_description a,
-#pp_two:hover > .pp_description a,
-#pp_three:hover > .pp_description a,
-#pp_four:hover > .pp_description a,
-#pp_five:hover > .pp_description a,
-#pp_six:hover > .pp_description a,
-#pp_seven:hover > .pp_description a,
-#pp_eight:hover > .pp_description a,
-#pp_nine:hover > .pp_description a,
-#pp_ten:hover > .pp_description a{
+#pp_one:hover > .pp_description a p,
+#pp_two:hover > .pp_description a p,
+#pp_three:hover > .pp_description a p,
+#pp_four:hover > .pp_description a p,
+#pp_five:hover > .pp_description a p,
+#pp_six:hover > .pp_description a p,
+#pp_seven:hover > .pp_description a p,
+#pp_eight:hover > .pp_description a p,
+#pp_nine:hover > .pp_description a p,
+#pp_ten:hover > .pp_description a p{
     color: var(--main-orange);
     font-weight: bold;
+}
+#pp_one:hover > .pp_description,
+#pp_two:hover > .pp_description,
+#pp_three:hover > .pp_description,
+#pp_four:hover > .pp_description,
+#pp_five:hover > .pp_description,
+#pp_six:hover > .pp_description,
+#pp_seven:hover > .pp_description,
+#pp_eight:hover > .pp_description,
+#pp_nine:hover > .pp_description,
+#pp_ten:hover > .pp_description{
+    background-position: -100% 0;
+}
+#pp_one:hover > .pp_image,
+#pp_two:hover > .pp_image,
+#pp_three:hover > .pp_image,
+#pp_four:hover > .pp_image,
+#pp_five:hover > .pp_image,
+#pp_six:hover > .pp_image,
+#pp_seven:hover > .pp_image,
+#pp_eight:hover > .pp_image,
+#pp_nine:hover > .pp_image,
+#pp_ten:hover > .pp_image{
+    background-position: 10% 0;
 }
 .pp_image{
     background-color: wheat;
@@ -694,6 +718,8 @@ nav ul li:hover {
     transition: all 0.2s ease;
     justify-content: center;
     color: white;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, rgb(10, 10, 10) 50%, rgb(36, 36, 36) 50%);
 
 
 }
